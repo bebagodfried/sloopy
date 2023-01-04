@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Generate: </title>
+  <link rel="stylesheet" href="includes/elvys/dist/1.0.0/css/ui.min.css">
+
+</head>
+<body class="bg-dark-900 fg-light fit-screen py-6">
+
+  <main class="absolute h-75 px-6 w-full z-2">
+    <header class="bg-dark-900 flex justify-between mb-1 py-1">
+      <a href="index.html"><h1 class="text-light">sloop</h1><sub class="fg-white opacity-50">v1.0.0</sub></a>
+      <span class="flex items-center g-1">
+        <form method="post" class="inline-flex solid-border rounded" id="sloop_form">
+          <div class="flex item-center">
+            <input type="text" name="s" class="align-middle bg-none fw-600 m-0 no-border" placeholder="Type a string" autocomplete="off">
+            <button type="submit" class="bg-none m-0 p-0 size-32"><i class="fa-regular fa-play-circle"></i></button>
+          </div>
+        </form>
+        <button type="button" id="loop_options" class="bg-none hover:bg-light-900 fg-light-900 opacity-50 hover:opacity-100 m-0 p-0 rounded-full size-32"><i class="fa-solid fa-ellipsis-vertical fw-600 large"></i></button>
+        <button type="button" onclick="history.go()" class="bg-none hover:bg-light-900 fg-light-900 opacity-50 hover:opacity-100 m-0 p-0 rounded-full sm:hidden size-32"><i class="fa-solid fa-rotate fw-600 large"></i></button>
+      </span>
+    </header>
+
+    <div id="js_stdout" class="solid-border max-h-75 overflow-auto w-full">
+      <table class="w-full">
+        <tr class="bg-white text-dark-900 p-1 top-0 z-1">
+          <th class="w-5 p-1 solid-border">No.</th>
+          <th class="flex flex-1 justify-between p-1 solid-border"><label for="#">Execution ...</label> <a href="#last" class="mx-1"><span id="r"></span></a></th>
+        </tr>
+      </table>
+    </div>
+  </main>
+
+  <div class="absolute flex items-center justify-center fit-container top-0 bg-cover" style="background-image: url(images/bg.jpg);font-size: 10vw;"></div>
+
+  <script src="includes/elvys/attribution.js"></script>
+  <script src="includes/elvys/dist/1.0.0/js/ui.min.js"></script>
+  <script src="app.js"></script>
+  <script src="loop.js"></script>
+</body>
+</html>

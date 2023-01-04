@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sloop - string repeater v1.0.0</title>
+  <link rel="stylesheet" href="includes/elvys/dist/1.0.0/css/ui.min.css">
+
+</head>
+<body class="bg-dark-900 fg-light fit-screen py-6 sm:py-1">
+  <main class="absolute h-75 px-6 w-full z-2">
+    <header class="bg-dark bg-opacity-0 flex justify-between mb-1 no-outline py-1">
+      <span></span>
+      <span class="flex items-center g-1">
+        <form method="get" class="inline-flex solid-border rounded" hidden>
+          <input type="text" name="s" class="align-middle bg-none fw-600 m-0 no-border" placeholder="Type a string" autocomplete="off">
+          <button type="submit" class="bg-none m-0 p-0 size-32"><i class="fa-regular fa-play-circle"></i></button>
+        </form>
+        <button type="button" id="loop_options" class="bg-none hover:bg-light-900 fg-light-900 opacity-50 hover:opacity-100 m-0 p-0 rounded-full  size-32"><i class="fa-solid fa-ellipsis-vertical fw-600 large"></i></button>
+        <button type="button" class="bg-none hover:bg-light-900 fg-light-900 opacity-50 hover:opacity-100 m-0 p-0 rounded-full  size-32" hidden><i class="fa-solid fa-rotate-left fw-600 large"></i></button>
+      </span>
+    </header>
+
+    <div id="js_stdout" class="flex items-center justify-center h-75 w-full">
+      <div class="inline-flex flex-column">
+        <span class="flex x-large" hidden>
+          <h1 class="text-light">sloop</h1><sub>v1.0.0</sub>
+        </span>
+
+        <span class="flex items-center g-1">
+          <form method="post" class="inline-flex solid-border border-b-2 rounded fs-6" id="sloop_form">
+            <div class="flex item-center">
+              <input type="text" name="s" class="align-middle bg-none fs-6 fw-600 m-0 p-0 px-1 no-border" placeholder="string here ..."
+                autocomplete="off">
+              <button type="submit" class="bg-none m-0 p-0 size-96"><i class="fa-regular fa-play-circle"></i></button>
+            </div></form>
+        </span>      
+      </div>
+    </div>
+  </main>
+
+  <div class="absolute flex items-center justify-center fit-container top-0 bg-cover" style="background-image: url(images/bg.jpg);font-size: 10vw;"></div>
+  
+  <script src="includes/elvys/attribution.js"></script>
+  <script src="includes/elvys/dist/1.0.0/js/ui.min.js"></script>
+  <script src="app.js"></script>
+  <!-- sloop - string repeater © 2022 by bebagodfried is licensed under MIT License (MIT) -->
+</body>
+</html>
